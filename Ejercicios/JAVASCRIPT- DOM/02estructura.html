@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Estructuras con JAVA</title>
+        <link rel="stylesheet" href="./css/estilos.css" type="text/css">
+        <script type="text/javascript" scr="./js/funcion.js">
+        </script>
+        <script type="text/javascript">
+            function mostrar(){
+                var letra;
+                var n1;
+
+                letra=document.getElementById("letra").value;
+                n1=document.getElementById("n1").value;
+
+                num1=parseInt(n1);
+                numFloat=parseFloat(n1);
+                
+                datos="La letra es "+letra+ "el numero es"+n1+"el numero float es "+numFloat;
+
+                document.getElementById("res").innerHTML=datos;
+            }
+        </script>
+    </head>
+    <body>
+        <nav id="menuPrincipal">
+            <h1>
+                <a class="opcionMenuPrincipal" href="index.html">javascript</a>
+                </h1>
+        </nav>
+        <section class="contenido quienesSomos">
+                <select>
+                    <option>Seleccione una opcion</option>
+                    <option>Datos</option>
+                    <option>if</option>
+                    <option>while</option>
+                    <option>for</option>
+                    <option>forin</option>
+                    <option>Estilos</option>
+                </select>
+                <article id="datos" class="contenedor">
+                    <h3>DATOS</h3>
+                    <input type="text" id="letra" placeholder="Introduce una letra"/>
+                    <input type="text" id="n1" placeholder="Introduce un numero con decimales"/>
+                    
+                    <input type="button" value="Mostrar" onclick="mostrar();">
+
+                    <p id="res"></p>
+                </article>
+             
+        </section> <footer>
+        </footer>
+    </body>
+</html>
